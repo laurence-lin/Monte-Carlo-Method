@@ -3,7 +3,7 @@ import random
 
 # Monte Carlo used to estimate pi
 # Assume I've a square with origin point (0, 0) with height 1, and a circle with radius 1 with same origin point inside the square.
-# Sample N times in the square, Assume I've M points in the circle, then I got
+# Sample N times in the square, Assume I've M points in the circle, then I got the estimated pi = N*4/M
 
 iteration = 5000
 x = random.uniform(-1, 1)
@@ -18,3 +18,6 @@ for i in range(iteration):
   
 pi = 4*circle/iteration
 print('Estimate pi:', pi)
+
+
+# Average value pi: 3.144
